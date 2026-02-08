@@ -1,0 +1,10 @@
+services:
+  vue_app : 
+    image : node:24
+    working_dir : /app
+    ports : 
+      - "5173:5173"
+    volumes : 
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install && npm run dev -- --host"

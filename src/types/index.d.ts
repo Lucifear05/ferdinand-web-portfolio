@@ -4,4 +4,5 @@ export interface IHomeCard {
   stacks: [string, string, ...string[]]
   img: string
   category?: string
+  link?: string
 }

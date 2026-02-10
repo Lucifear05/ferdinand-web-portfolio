@@ -5,16 +5,19 @@ const props = defineProps<{
   body: string
   stacks: [string, string, ...string[]]
   category: string
+  link?: string
 }>()
 </script>
 
 <template>
-  <div class="card bg-base-100 shadow-sm md:max-h-96">
+  <div
+    class="card bg-base-100 shadow-sm md:max-h-96 hover:shadow-md hover:-translate-y-1.5 transition-all"
+  >
     <figure>
       <img
         :src="`/img/projects/${props.img}`"
         :alt="props.title"
-        class="image-full h-full w-full object-cover"
+        class="h-full w-full object-cover"
       />
       <div class="badge absolute opacity-75 top-2 badge-sm badge-soft text-gray-700 left-2">
         {{ props.category }}
@@ -35,7 +38,7 @@ const props = defineProps<{
         </div>
       </div>
       <div class="text-right mt-2">
-        <a href="" class="btn btn-sm btn-soft">
+        <a :href="props.link" class="btn btn-sm btn-soft" target="_blank">
           <img
             width="20"
             height="20"

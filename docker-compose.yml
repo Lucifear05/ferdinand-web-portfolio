@@ -1,6 +1,6 @@
 services:
   vue_app : 
-    image : node:24
+    image : node:alpine
     working_dir : /app
     ports : 
       - "5173:5173"

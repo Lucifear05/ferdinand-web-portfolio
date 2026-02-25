@@ -24,7 +24,7 @@ export const cards: IHomeCard[] = [
     img: ['medlife.png'],
     title: 'Medlife',
     body: 'Expire medication reminder app. Provides notifications when medication is about to expire. Email and WhatsApp reminders.',
-    stacks: ['Vue.js', 'Express.js', 'MongoDB'],
+    stacks: ['Vue.js', 'Express.js', 'MongoDB', 'Docker'],
     category: 'Web Apps',
     link: 'https://github.com/Ferdinand05/frontend-medlife',
   },

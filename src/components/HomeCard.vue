@@ -30,7 +30,7 @@ const cardModal = ref<HTMLDialogElement | null>(null)
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ props.title }}</h2>
-      <p class="text-justify line-clamp-3">
+      <p class="text-justify line-clamp-3 text-gray-700">
         {{ props.body }}
       </p>
       <div class="card-actions justify-end">
@@ -94,10 +94,14 @@ const cardModal = ref<HTMLDialogElement | null>(null)
 
       <!-- deskripsi dan tech stack -->
       <div class="mt-4">
-        <p class="text-justify">{{ props.body }}</p>
+        <p class="text-justify text-sm sm:text-base">{{ props.body }}</p>
 
         <div class="flex flex-wrap gap-2 mt-3">
-          <div class="badge badge-soft badge-primary" v-for="(stack, i) in props.stacks" :key="i">
+          <div
+            class="badge badge-soft badge-primary text-sm sm:text-base"
+            v-for="(stack, i) in props.stacks"
+            :key="i"
+          >
             {{ stack }}
           </div>
         </div>

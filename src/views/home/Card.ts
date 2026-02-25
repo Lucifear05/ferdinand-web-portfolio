@@ -59,6 +59,6 @@ export const cards: IHomeCard[] = [
     body: 'A dashboard system for managing the distribution of sacrificial meat via QR codes that can be sent via email.',
     stacks: ['Laravel', 'Filament', 'MySQL', 'Livewire'],
     category: 'Dashboards',
-    link: 'https://github.com/Ferdinand05/productions_tracking',
+    link: 'https://github.com/Ferdinand05/jatah_qurban',
   },
 ]
